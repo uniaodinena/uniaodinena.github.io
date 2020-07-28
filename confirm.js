@@ -20,3 +20,13 @@ function register(){
 
     document.body.style.background = 'url(https://media.giphy.com/media/MXQnyEQwBJ6eTj90L5/giphy.gif)'
 }
+
+function onSignIn(){
+    var profile = googleUser.getBasicProfile();
+
+    document.getElementById('bg-modal').style.display = 'none'
+
+    var userName = document.getElementById('userName')
+
+    userName.innerHTML = `Bem vindo(a)! ${profile.getName()}`
+}

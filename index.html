@@ -9,11 +9,18 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="https://i.imgur.com/iiCPZLW.png"/>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="547495960913-4k0933m4ti459a0r3am2cjqer2gas5bk.apps.googleusercontent.com">
 </head>
 <body>
     <form action="">
+
+        <h1 id='userName'>Bem vindo(a)! {nome}</h1>
+
         <div class="title_header">
             <h1 id='dinena_title'>União DiNena</h1>
             <h2>Lil Ryan - É a União di Nena (feat. Cesinha Hype) [Prod. IGO]</h2>
@@ -25,5 +32,15 @@
             </a>
         </div>
     </form>
+
+    <div class="bg-modal" id='bg-modal'>
+        <div class="modal-content">
+            <h1>Olá, forasteiro</h1>
+
+            <h2>Eu não te conheço...Faça seu login e mostre-me sua identidade!</h2>
+
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" id="googleButton"></div>
+        </div>
+    </div>
 </body>
 </html>
