@@ -13,6 +13,8 @@ form{
     padding-bottom: 65px;
     max-width: 1000px;
     box-sizing: border-box;
+
+    opacity: 85%;
 }
 
 #dinena_title{
@@ -44,7 +46,7 @@ button{
     width: 260px;
     height: 56px;
     margin-top: 40px;
-    background: -webkit-linear-gradient(#c73326, #333);
+    background-color: #c73326;
     border-radius: 8px;
     color: white;
     font-size: 30px;
